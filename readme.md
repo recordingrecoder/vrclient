@@ -37,6 +37,25 @@ When your application can safely be closed. (WIP)
 	}
 
 
+
+### Blur
+
+When application is in background. (eg. HUD is open)
+
+    VRClient.onBlur = function() {
+        // pause your app
+    };
+
+
+### Focus
+
+When application is focused. (eg. HUD is closed and user is returned to your app)
+
+    VRClient.onFocus = function() {
+        // resume!
+    };
+
+
 ### Render mode changes
 
 Handling different render mode changes
